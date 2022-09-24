@@ -1,0 +1,26 @@
+@import '../../../styles/base.scss';
+.topBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: $fontWeight;
+    position: relative;
+    width: 100%;
+    background-color: $bgColor;
+}
+.menu{
+    font-size: $fontSize;
+    margin: 0 80px;
+    background-color: $bgColor;
+}
+.set{
+    font-size: $fontSize;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 30px;
+}
+.set:hover{
+    color: $color;
+}
