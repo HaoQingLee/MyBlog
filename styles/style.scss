@@ -1,0 +1,62 @@
+@import './base.scss';
+
+body{
+    background: $bgColor url(../public/bg.jpg) no-repeat fixed top;
+    background-position: center 0;
+    background-size: cover;
+}
+// 背景图遮罩
+// #__next ::before {
+//     content: "";
+//     position: absolute;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     top: 46px;
+//     background-color: rgba(245, 255, 250, 0.35);
+//     z-index: 2;
+// }
+.anticon svg{
+    font-size: $fontSize;
+}
+.trans {
+  transition: all 0.3s !important;
+}
+
+.hover {
+  @extend .trans;
+}
+.hover:hover {
+  background-color: $hoverColor !important;
+}
+
+.btnBase {
+  position: absolute;
+  width: $btnWidth;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  bottom: 0;
+  border-radius: 14px;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: $themeColor1;
+  @extend .hover;
+}
+
+.tagBase {
+  display: inline-block;
+  padding: 0 8px;
+  margin: 2px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+  user-select: none;
+  color: $textColor;
+  border-radius: 10px;
+  cursor: pointer;
+  @extend .hover;
+}

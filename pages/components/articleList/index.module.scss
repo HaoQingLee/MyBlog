@@ -1,0 +1,20 @@
+@import '../../../styles/base.scss';
+.list{
+    width: 900px;
+}
+.item{
+    border-radius: $bigRadius;
+    background-color: $cardColor;
+    margin-bottom: 30px;
+    transition: all 0.3s;
+    margin-top: 30px;
+}
+.item:hover{
+   transform: scale(1.02);
+   cursor: pointer;
+}
+.title{
+     h4{
+        font-size: 24px !important;
+    }
+}

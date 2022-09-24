@@ -1,0 +1,36 @@
+@import '../../../styles/base.scss';
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $cardColor;
+    margin: 30px 0 0 30px;
+    border-radius: $bigRadius;
+    transition: all .3s;
+    .desc{
+        .avatar{
+            width: 260px;
+            height: 260px;
+        }
+        h2{
+            font-size: 26px;
+            font-weight: $fontWeight;
+            color: rgba(0,0,0,.85);
+        }
+        div{
+            font-size: 14px;
+            font-weight: 400;
+            color: 	#D4F2E7;
+        }
+    }
+    .links{
+         display: flex;
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+    }
+}
+.page:hover{
+    transform: scale(1.02);
+}
